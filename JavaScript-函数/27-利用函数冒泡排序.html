@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //利用函数冒泡排序
+        function sort(arr) {
+        for(var i = 0; i <= arr.length - 1; i++){
+            for (var j = 0; j <= arr.length - i; j++ ){
+                if(arr[j] > arr[j + 1]){
+                    var tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j+ 1] = tmp;
+                 }
+            }
+        }
+        return arr;
+        }
+        var arr = [12,11,14,12,10];
+        console.log(sort(arr));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
