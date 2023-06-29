@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.Match 对象随机数放啊 random() 返回一个随机小数  0 <= x < 1
+        //2.这个方法里面不带参数
+        console.log(Math.random());
+        //我们想要得到两个数之间的随机整数 并且 包含这两个数
+        //Math.floor(Math.random()*(max - min + 1)) + min;
+        function getRandom(min,max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        console.log(getRandom(1,10));
+
+        // 5.随机点名
+        var arr = ['张三','张三丰','李四'];
+        console.log(arr[0]);
+        console.log(arr[getRandom(0,2)]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

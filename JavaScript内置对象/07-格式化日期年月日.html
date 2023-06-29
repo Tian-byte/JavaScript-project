@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //格式化日期 年月日
+        var date = new Date();
+        console.log(date.getFullYear());
+        console.log(date.getMonth() + 1);  //返回月份小于1个月  
+        console.log(date.getDay); //返回周几  周日返回的是0  周一返回的是1  周六返回的是 6
+        // 2019年 5月 1 日 星期三
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var dates = date.getDate();
+        console.log('今天是：' + year + '年' + month + '月' + dates + '日');
+          
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
