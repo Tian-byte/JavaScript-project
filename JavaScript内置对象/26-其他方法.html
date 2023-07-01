@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.替换字符串 replace('被替换的字符','替换为的字符')
+        var str = 'andyandy'; //只会替换第一个
+        // console.log( str.replace('a','b'));
+        while(str.indexOf('a') !== -1){
+            str1 = str.replace('a','*');
+        }
+        console.log(str1);
+
+        //2。字符转换为数组 split('分割符')  join把数组转换为字符串
+        var str2 = 'red,pink,blue';
+        console.log(str2.split(','));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
