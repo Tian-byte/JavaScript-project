@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>xxxxxxxxxx</li>
+        <li>xxxxxxxxxx</li>
+        <li>xxxxxxxxxx</li>
+        <li>xxxxxxxxxx</li>
+        <li>xxxxxxxxxx</li>
+    </ul>
+    <ol id="ol">
+        <li>aaa</li>
+        <li>aaa</li>
+        <li>aaa</li>
+    </ol>
+    <script>
+        //返回的是 获取过来元素对象的集合  以伪数组的形式存储的
+        var s = document.getElementsByTagName('li');
+        console.log(s);
+        console.log(s[0]);
+        //2.我们想要一次打印里面的元素对象我们可以采取遍历的方式
+        for(var i = 0; i <= s.length; i++){
+            console.log(s[i]);
+        }
+        // var ol = getElementsByTagName('ol');
+        // console.log(ol[0].getElementsByTagName('li'));
+        var ol = document.getElementById('ol');
+        console.log(ol.getElementsByTagName('li'));
+    </script>
+</body>
+</html>
