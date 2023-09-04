@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div ,p {
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        color: #ffff;
+        background-color: pink;
+    }
+    </style>
+</head>
+<body>
+    
+    <button>显示当前系统时间</button>
+    <div>某个事件</div>
+    <p>123</p>
+    <script>
+         function getDate() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var dates = data.getDate();
+            var arr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+            var day = date.getDay();
+            return '今天是：' + year + '年' + month + '月' + dates + '日' + arr[day];
+        }
+        //当点击按钮  div 里面的文字内容会发生变换
+        //1.获取元素
+        var but = document.querySelector('button');
+        var div = document.querySelector('div');
+        //2. 注册事件
+        but.onclick = function() {
+            // div.innerText = '2023-8-5';
+            div.innerText = getDate();
+        }
+
+        //可以不用添加事件
+        var p = document.querySelector('p');
+        p.innerText = getDate();
+    </script>
+</body>
+</html>
